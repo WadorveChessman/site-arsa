@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARSA - SUCCURSALES</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/aproposStyles.css">
+    <link rel="stylesheet" href="../assets/css/formulaire_styles.css">
+    <link rel="stylesheet" href="../assets/css/succursales_style.css">
+
+    <link href="../assets/img/arsa_logo.jpg" rel="icon">
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <!-- En-tête du site -->
+    <header>
+        <div class="top-bar">
+            <span> ARSA / Assurance Rapide S.A.</span>
+            <span class="service">Chay la pa sou kont ou!</span>
+            <div class="top-links">
+                <a href="succursales.html"><i class="fas fa-map-marker-alt"></i> Succursales</a>
+                <a href="courriels.html"><i class="fas fa-envelope"></i> Courriel</a>
+                <a href="partenaires.html"><i class="fas fa-handshake"></i> Partenaires</a>
+                <a href="agents.html"><i class="fas fa-user-tie"></i> Agents</a>
+            </div>
+            
+        </div>
+        <!-- Menu principal -->
+        <nav>
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../assets/img/Logo_arsa.png" alt="ARSA Logo">
+                </a>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="apropos.html">À PROPOS DE ARSA</a></li>
+                <li>
+                    <a href="#">CATALOGUES <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="#">Assurance Santé</a></li>
+                        <li><a href="#">ASSURANCE OBSÈQUE</a></li>
+                        <li><a href="#">Assurance Voyage</a></li>
+                        <!-- <li><a href="#">Assurance Automobile</a></li>
+                        <li><a href="#">Assurance Habitation</a></li> -->
+                        <li><a href="#">LAVALIZÈ / ASSURANCE - CREDIT</a></li>
+                        <li><a href="#">MARQUES BLANCHES</a></li>
+                        <li><a href="#">PORTFOLIO</a></li>
+                        <li><a href="#">ASSURANCE À RESPONSABILITÉ CIVILE</a></li>
+                        <li><a href="#">PLANS SPECIAUX</a></li>
+                    </ul>
+                </li>
+                <li><a href="formulaires.html">NOS FORMULAIRES</a></li>
+                <li><a href="temoignages.html">TÉMOIGNAGE</a></li>
+                <li><a href="actualites.html">ACTUALITÉS</a></li>
+                <li><a href="galeries.html">GALERIES</a></li>
+                <li><a href="contact.html">CONTACTEZ-NOUS</a></li>
+            </ul>
+            <!-- Bouton pour mobile -->
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+   <!-- Section de contact -->
+<section class="contact-bar">
+    <!-- Message par e-mail -->
+    <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <span>Envoyez-nous un message</span>
+        <p>Envoyez-nous un e-mail :</p>
+        <a href="mailto:infos@arsa.com">infos@arsa.com</a>
+    </div>
+
+    <!-- Numéros de téléphone -->
+    <div class="contact-item">
+        <i class="fas fa-phone"></i>
+        <span>Appelez-nous</span>
+        <p>Nos conseillers sont disponibles :</p>
+        <a href="tel:28140314">(+509) 4010-4317 / 3261-8370</a>
+    </div>
+
+    <!-- Heures d'ouverture -->
+    <div class="contact-item">
+        <i class="fas fa-clock"></i>
+        <span>Heures d'ouverture</span>
+        <p>Lundi au Vendredi :</p>
+        <p style="color: blue;">08h00 - 16h00</p>
+    </div>
+
+    <!-- Réseaux sociaux -->
+    <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+</section>
+
+<!-- Section d'accueil avec slogan et texte centré -->
+<section class="hero-section-apropos">
+    <div class="hero-content-apropos">
+        <h1>NOS SUCCURSALES</h1>
+        <p class="slogan">"Chay la pa sou kont ou!"</p>
+        <!-- <p>Nous vous offrons des solutions d'assurance rapides et fiables.</p> -->
+    </div>
+</section>
+
+<!-- Section Succursales -->
+<section class="branches-section">
+    <div class="container">
+        <h2>Nos Succursales</h2>
+        <p>Cliquez sur un département pour découvrir ses communes et adresses.</p>
+        <!-- Liste des départements -->
+        <div class="departments-tabs">
+            <button class="tab-button active" data-department="nord-ouest">Nord-Ouest</button>
+            <button class="tab-button" data-department="nord">Nord</button>
+            <button class="tab-button" data-department="artibonite">Artibonite</button>
+        </div>
+
+        <!-- Contenu des communes et adresses -->
+        <div class="branches-content">
+            <!-- Département Nord-Ouest -->
+            <div class="department-details active" id="nord-ouest">
+                <h3>Nord-Ouest</h3>
+                <div class="commune-box" style="background-color: #c1a5f0;">
+                    <p><i class="fas fa-city"></i> <strong> Commune :</strong> Port-de-Paix</p>
+                    <p><i class="fas fa-map-marker-alt"></i> <strong> Adresse :</strong> Rue Benito Sylvain</p>
+                    <p><i class="fas fa-phone-alt"></i> <strong> Phone :</strong> +509 4010 4317 / 3261 8370</p>
+                </div>
+                <div class="commune-box" style="background-color: #a386d4;">
+                    <p><i class="fas fa-city"></i><strong> Commune :</strong> Saint-Louis du Nord</p>
+                    <p><i class="fas fa-map-marker-alt"></i><strong> Adresse :</strong> Rue 2 Saint</p>
+                    <p><i class="fas fa-phone-alt"></i> <strong> Phone :</strong> +509 4010 4317 / 3261 8370</p>
+                </div>
+            </div>
+
+            <!-- Département Nord -->
+            <div class="department-details" id="nord">
+                <h3>Nord</h3>
+                <div class="commune-box" style="background-color: #c1a5f0;">
+                    <p><i class="fas fa-city"></i><strong> Commune :</strong> Cap-Haïtien</p>
+                    <p><i class="fas fa-map-marker-alt"></i><strong> Adresse :</strong> Haut du Cap</p>
+                    <p><i class="fas fa-phone-alt"></i> <strong> Phone :</strong> +509 4010 4317 / 3261 8370</p>
+                </div>
+                <div class="commune-box" style="background-color: #ccc2de;">
+                    <p><i class="fas fa-city"></i><strong> Commune :</strong> Limbe</p>
+                    <p><i class="fas fa-map-marker-alt"></i><strong> Adresse :</strong> Haut du Cap</p>
+                    <p><i class="fas fa-phone-alt"></i> <strong> Phone :</strong> +509 4010 4317 / 3261 8370</p>
+                </div>
+            </div>
+
+            <!-- Département Artibonite -->
+            <div class="department-details" id="artibonite">
+                <h3>Artibonite</h3>
+                <div class="commune-box" style="background-color: #c1a5f0;">
+                    <p><i class="fas fa-city"></i><strong> Commune :</strong> Gonaïves</p>
+                    <p><i class="fas fa-map-marker-alt"></i><strong> Adresse :</strong> Rue Principale</p>
+                    <p><i class="fas fa-phone-alt"></i> <strong> Phone :</strong> +509 4010 4317 / 3261 8370</p>
+                </div>
+                <div class="commune-box" style="background-color: #a987e0;">
+                    <p><i class="fas fa-city"></i><strong> Commune :</strong> Gros-Mornes</p>
+                    <p><i class="fas fa-map-marker-alt"></i><strong> Adresse :</strong> Rue Principale</p>
+                    <p><i class="fas fa-phone-alt"></i> <strong> Phone :</strong> +509 4010 4317 / 3261 8370</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="map-section">
+    <div class="container">
+        <h2>Nos Succursales sur la carte</h2>
+        <p>Découvrez l'emplacement de nos succursales sur la carte ci-dessous.</p>
+        <div id="google-map" style="width: 100%; height: 500px;"></div> <!-- Conteneur de la carte -->
+    </div>
+</section>
+
+
+<!-- Footer Moderne -->
+<footer class="footer">
+    <div class="footer-top">
+        <!-- Logo et Introduction -->
+        <div class="footer-section about">
+            <a href="#">
+                <img src="../assets/img/Logo_arsa.png" alt="Logo ARSA" class="footer-logo">
+            </a>
+            <p>ARSA s'engage à offrir des solutions d'assurance adaptées pour protéger vos proches et votre avenir. Bénéficiez d'une couverture complète et fiable en toute circonstance.</p>
+        </div>
+
+        <!-- Liens Utiles -->
+        <div class="footer-section links">
+            <h4>Liens rapides</h4>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="nos_services.html">Nos Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="foire_aux_questions.html">Foire aux questions</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-section contact">
+            <h4>Contact Nord'Ouest</h4>
+            <p><i class="fas fa-map-marker-alt"></i> Rue Benito Sylvain, Port-de-Paix, Haïti</p>
+            <p><i class="fas fa-phone-alt"></i> +509 2222-1111 / 2222-1111</p>
+            <p><i class="fas fa-envelope"></i> contact@arsa.com</p>
+        </div>
+        <div class="footer-section contact">
+            <h4>Contact Nord</h4>
+            <p><i class="fas fa-map-marker-alt"></i> Haut du cap, Cap-haïtien, Haïti</p>
+            <p><i class="fas fa-phone-alt"></i> +509 2222-1111 / 2222-1111</p>
+            <p><i class="fas fa-envelope"></i> contact@arsa.com</p>
+        </div>
+
+        <!-- Newsletter -->
+        <!-- <div class="footer-section newsletter">
+            <h4>Inscrivez-vous à notre newsletter</h4>
+            <form action="#" method="POST">
+                <input type="email" placeholder="Votre adresse email" required>
+                <button type="submit"><i class="fas fa-paper-plane"></i> S'abonner</button>
+            </form>
+            <p>Recevez des offres spéciales et des nouvelles directement dans votre boîte mail.</p>
+        </div> -->
+    </div>
+
+    <!-- Réseaux Sociaux -->
+    <div class="footer-middle">
+        <h4>Suivez-nous</h4>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+
+    <!-- Bas de page -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 ARSA. Tous droits réservés. | <a href="../arsa/politique_de_confidentialite.html">Politique de confidentialité</a> | <a href="../arsa/conditions_utilisation.html">Conditions d'utilisation</a></p>
+    </div>
+
+    <!-- Bouton Retour Haut -->
+    <div id="back-to-top">
+        <a href="#"><i class="fas fa-arrow-up"></i></a>
+    </div>
+</footer>
+<script>
+    document.querySelectorAll('.toggle-content h3').forEach((toggle) => {
+    toggle.addEventListener('click', () => {
+        const parent = toggle.parentElement;
+        parent.classList.toggle('active');
+    });
+});
+
+</script>
+<script>
+    // Afficher ou cacher le bouton
+    const backToTop = document.getElementById("back-to-top");
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 200) {
+            backToTop.classList.add("show");
+        } else {
+            backToTop.classList.remove("show");
+        }
+    });
+
+    // Faire défiler vers le haut
+    backToTop.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    });
+</script>
+
+    <script src="../assets/js/scripts.js"></script>
+    <script>
+        document.querySelectorAll('.toggle-content h3').forEach(header => {
+    header.addEventListener('click', () => {
+        const parent = header.parentElement;
+        parent.classList.toggle('open');
+    });
+});
+
+    </script>
+
+<script>
+    // Gestion des onglets
+    document.querySelectorAll('.tab-button').forEach(button => {
+        button.addEventListener('click', () => {
+            // Supprimer l'état actif de tous les boutons et contenus
+            document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+            document.querySelectorAll('.department-details').forEach(content => content.classList.remove('active'));
+
+            // Ajouter l'état actif au bouton et au contenu correspondant
+            button.classList.add('active');
+            const department = button.getAttribute('data-department');
+            document.getElementById(department).classList.add('active');
+        });
+    });
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=VOTRE_CLE_API&callback=initMap" async defer></script>
+<script>
+    // Fonction d'initialisation de la carte
+    function initMap() {
+      // Coordonnées du centre de la carte (par exemple, Port-au-Prince)
+      var mapCenter = { lat: 18.5944, lng: -72.3074 };
+  
+      // Créez la carte avec le centre et un zoom initial
+      var map = new google.maps.Map(document.getElementById("google-map"), {
+        center: mapCenter,
+        zoom: 8
+      });
+  
+      // Succursales avec leurs coordonnées
+      var branches = [
+        {
+          name: "Port-de-Paix",
+          address: "Rue Benito Sylvain",
+          phone: "+509 4010 4317",
+          lat: 19.9520, // Coordonnée latitude de Port-de-Paix
+          lng: -72.8523 // Coordonnée longitude de Port-de-Paix
+        },
+        {
+          name: "Saint-Louis du Nord",
+          address: "Rue 2 Saint",
+          phone: "+509 4050 1234",
+          lat: 19.7044, // Coordonnée latitude de Saint-Louis du Nord
+          lng: -72.9843 // Coordonnée longitude de Saint-Louis du Nord
+        },
+        {
+          name: "Cap-Haïtien",
+          address: "Haut du Cap",
+          phone: "+509 4050 9876",
+          lat: 19.7550, // Coordonnée latitude de Cap-Haïtien
+          lng: -72.1942 // Coordonnée longitude de Cap-Haïtien
+        },
+        {
+          name: "Gonaïves",
+          address: "Rue Principale",
+          phone: "+509 4010 5678",
+          lat: 19.4500, // Coordonnée latitude de Gonaïves
+          lng: -72.6833 // Coordonnée longitude de Gonaïves
+        }
+      ];
+  
+      // Ajouter un marqueur pour chaque succursale
+      branches.forEach(function(branch) {
+        var marker = new google.maps.Marker({
+          position: { lat: branch.lat, lng: branch.lng },
+          map: map,
+          title: branch.name
+        });
+  
+        // Ajouter une infobulle avec les détails de la succursale
+        var infoWindow = new google.maps.InfoWindow({
+          content: '<h4>' + branch.name + '</h4><p>' + branch.address + '</p><p>' + branch.phone + '</p>'
+        });
+  
+        marker.addListener("click", function() {
+          infoWindow.open(map, marker);
+        });
+      });
+    }
+  </script>
+  
+
+
+</body>
+</html>

@@ -1,0 +1,233 @@
+.testimonials-section {
+    background: linear-gradient(135deg, #f6f7f9, #dde1e7);
+    padding: 60px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.testimonials-section .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.testimonials-section h1 {
+    font-size: 2.5rem;
+    color: #0441f4;
+    margin-bottom: 10px;
+}
+
+.testimonials-section p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.testimonial-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial-card p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+.testimonial-card h3 {
+    font-size: 1.1rem;
+    color: #0441f4;
+    font-weight: bold;
+}
+
+.encouragement-section {
+    background: linear-gradient(135deg, #0077b6, #00b4d8, #90e0ef);
+    color: #fff;
+    padding: 80px 20px;
+    position: relative;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.encouragement-section .container {
+    z-index: 2;
+    position: relative;
+}
+
+.encouragement-section h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.encouragement-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.call-to-action {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    background: #fff;
+    color: #0077b6;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background: #f1f1f1;
+    transform: translateY(-3px);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.btn-outline:hover {
+    background: #0077b6;
+    color: #fff;
+}
+
+.animated-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.animated-lines .line {
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(135deg, #ff0077, #ffcc00, #0077ff, #00ffcc);
+    animation: move-lines 3s linear infinite;
+    opacity: 0.8;
+}
+
+.animated-lines .line:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.animated-lines .line:nth-child(2) {
+    left: 30%;
+    animation-delay: 0.5s;
+}
+
+.animated-lines .line:nth-child(3) {
+    left: 50%;
+    animation-delay: 1s;
+}
+
+.animated-lines .line:nth-child(4) {
+    left: 70%;
+    animation-delay: 1.5s;
+}
+
+.animated-lines .line:nth-child(5) {
+    left: 90%;
+    animation-delay: 2s;
+}
+
+@keyframes move-lines {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+.importance-assurance {
+    background: linear-gradient(135deg, #f6f7f9, #dde1e7);
+    padding: 60px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.importance-assurance h1 {
+    font-size: 2.5rem;
+    color: #0441f4;
+    margin-bottom: 20px;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.importance-assurance p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.importance-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.importance-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.importance-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.importance-card i {
+    font-size: 3rem;
+    color: #0441f4;
+    margin-bottom: 15px;
+}
+
+.importance-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.importance-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}

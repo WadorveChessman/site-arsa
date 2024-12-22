@@ -1,0 +1,156 @@
+/* Section de formulaire */
+.contact-section {
+    background: linear-gradient(135deg, #0441f4, #81cf1c, #ea9f84, #ffd700);
+    padding: 50px 20px;
+    text-align: center;
+    color: #fff;
+    margin: 30px 0;
+    background-size: 400% 400%; /* Taille agrandie pour l'animation */
+    animation: gradient-scroll 8s ease infinite; /* Animation infinie */
+    border-radius: 15px; /* Coins arrondis pour plus de style */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Ombre pour un effet 3D */
+}
+
+/* Animation du dégradé */
+@keyframes gradient-scroll {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* En-tête dans la section de contact */
+.contact-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    background: linear-gradient(90deg, #81cf1c, #0441f4, #ff4500);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: text-gradient 3s ease-in-out infinite;
+}
+
+/* Animation des textes */
+@keyframes text-gradient {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Bouton dynamique */
+.btn-submit {
+    background: linear-gradient(135deg, #ff4500, #81cf1c, #0441f4);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 50px; /* Bouton plus arrondi */
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s ease-in-out;
+    background-size: 300% 300%;
+    animation: button-gradient 5s linear infinite;
+}
+
+.btn-submit:hover {
+    transform: translateY(-3px) scale(1.05);
+}
+
+/* Animation des couleurs pour le bouton */
+@keyframes button-gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h2 {
+    font-size: 2rem;
+    color: #0441f4;
+    margin-bottom: 10px;
+}
+
+.contact-container p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: grid;
+    gap: 20px;
+}
+
+.form-group {
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #0441f4;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #0441f4;
+}
+
+.form-group span {
+    color: #ff0000;
+}
+
+.btn-submit {
+    background: linear-gradient(135deg, #0441f4, #81cf1c);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.btn-submit:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, #0332c9, #66b116);
+}
+
+.form-response {
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    display: none;
+}

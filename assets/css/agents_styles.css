@@ -1,0 +1,190 @@
+/* Section Agents */
+.agents-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.agents-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+.agents-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Carte Agent */
+.agent-card {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    text-align: left;
+}
+
+.agent-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Image de l'Agent */
+.agent-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Détails de l'Agent */
+.agent-details {
+    padding: 15px;
+}
+
+.agent-details h3 {
+    font-size: 1.5em;
+    color: #007BFF;
+    margin: 0 0 10px;
+}
+
+.agent-details p {
+    font-size: 0.9em;
+    margin: 5px 0;
+    color: #555;
+}
+
+.agent-details strong {
+    color: #000;
+}
+/* Animation d'apparition */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.agent-card {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Section Service */
+/* Section Service */
+.service-section {
+    padding: 50px 20px;
+    background: linear-gradient(120deg, #f4f4f4, #ffffff, #007BFF);
+    background-size: 300% 300%; /* Agrandit le fond pour permettre l'animation */
+    animation: background-move 6s infinite alternate; /* Animation fluide */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Animation pour l'arrière-plan */
+@keyframes background-move {
+    0% {
+        background-position: 0% 50%; /* Départ du dégradé */
+    }
+    50% {
+        background-position: 100% 50%; /* Milieu du dégradé */
+    }
+    100% {
+        background-position: 0% 50%; /* Retour au point de départ */
+    }
+}
+
+
+.service-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Conteneur des Articles */
+.service-articles {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Pour qu'ils reviennent à la ligne sur petit écran */
+}
+
+/* Style des Articles */
+.service-article {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+}
+
+.service-article:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Icônes dynamiques */
+.service-icon {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #007BFF;
+    animation: bounce 2s infinite ease-in-out;
+}
+
+.service-icon i {
+    animation: spin 4s linear infinite; /* Les icônes tournent */
+}
+
+.service-article h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+.service-article p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Animation des couleurs */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-articles {
+        flex-direction: column; /* Articles en colonne sur petit écran */
+    }
+
+    .service-article {
+        width: 100%; /* Occupe toute la largeur */
+    }
+}

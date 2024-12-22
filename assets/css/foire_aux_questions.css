@@ -1,0 +1,91 @@
+/* Section FAQ */
+.faq-section {
+    padding: 50px 20px;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .faq-container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .faq-image {
+    flex: 1;
+    background: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .faq-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .faq-content {
+    flex: 2;
+    padding: 20px;
+  }
+  
+  .faq-content h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .faq-item {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .faq-question h3 {
+    font-size: 1.2em;
+    color: #007BFF;
+  }
+  
+  .faq-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    color: #007BFF;
+    cursor: pointer;
+  }
+  
+  .faq-toggle span {
+    transition: transform 0.3s ease;
+  }
+  
+  .faq-answer {
+    display: none;
+    margin-top: 10px;
+    color: #555;
+    font-size: 1em;
+  }
+  
+  /* Animation pour les icônes */
+  .faq-item.open .faq-toggle span {
+    transform: rotate(45deg);
+  }
+  
+  .faq-item.open .faq-answer {
+    display: block;
+  }
+  

@@ -1,0 +1,80 @@
+/* Section Services Timeline */
+.services-timeline {
+    padding: 50px 20px;
+    background: #f9f9f9;
+    text-align: center;
+    position: relative;
+  }
+  
+  .services-timeline h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .timeline-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .timeline-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+  }
+  
+  /* Ligne verticale */
+  .timeline-container::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    background: #007BFF;
+    left: 50px; /* Position de la ligne */
+    top: 0;
+    z-index: 1;
+  }
+  
+  .timeline-item .circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #007BFF;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    margin-right: 20px;
+  }
+  
+  .timeline-item:nth-child(odd) .circle {
+    margin-left: 0;
+  }
+  
+  .timeline-item .content {
+    background: #66afe9;
+    padding: 15px 20px;
+    border-radius: 5px;
+    width: calc(100% - 120px); /* Ajustement pour aligner avec la ligne */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    color: white;
+  }
+  
+  .timeline-item h3 {
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .timeline-item p {
+    color: white;
+    font-size: 1em;
+    line-height: 1.5;
+  }
+  
