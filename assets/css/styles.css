@@ -245,52 +245,100 @@ nav a {
     font-style: Garamond;
     margin-bottom: 20px;
 }
-
 /* Services Section */
 .services {
-  padding: 50px 20px;
-  text-align: center;
-}
-
-.services h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.service-grid {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-}
-
-.service-item {
-  background: #f7f7f7;
-  padding: 20px;
-  border-radius: 5px;
-  text-align: center;
-  width: 250px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-}
-
-.service-item i {
-  font-size: 2rem;
-  color: #0441f4;
-  margin-bottom: 10px;
-}
-
-.service-item h3 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-}
-
-.service-item {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .services h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .service-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden; /* Cache les éléments qui débordent */
+  }
+  
+  .service-grid {
+    display: flex;
+    gap: 20px;
+    scroll-behavior: smooth; /* Transition fluide */
+    overflow-x: auto; /* Permet le défilement horizontal */
+  }
+  
+  .service-item {
+    background: #f7f7f7;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    min-width: 250px; /* Assure une largeur minimum */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, background 0.3s ease;
-}
-
-.service-item:hover {
+  }
+  
+  .service-item:hover {
     background: #e7d008;
     transform: translateY(-10px); /* Ajoute un léger déplacement vers le haut */
-}
+  }
+  
+  .service-item i {
+    font-size: 2rem;
+    color: #0441f4;
+    margin-bottom: 10px;
+  }
+  
+  .service-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #0441f4;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s;
+  }
+  
+  .scroll-btn:hover {
+    background: #0331b4;
+  }
+  
+  .left-btn {
+    left: 10px;
+  }
+  
+  .right-btn {
+    right: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .service-item {
+      min-width: 200px; /* Réduit la largeur des éléments sur petits écrans */
+    }
+  
+    .scroll-btn {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  
 
 /* Style global pour la section */
 .insurance-advertisement {
@@ -586,9 +634,6 @@ nav a {
 
 
 
-
-
-
 @media screen and (max-width: 768px) {
     .nav-links {
         display: none;
@@ -610,6 +655,9 @@ nav a {
         font-style: Garamond;
         margin-bottom: 20px;
     }
+    .logo{
+        margin-left: 25%;
+    }
 }
 
 /* Responsive Design */
@@ -627,6 +675,7 @@ nav a {
         left: 0;
         width: 100%;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-top: 8%;
     }
 
     .nav-links.active {
@@ -643,6 +692,44 @@ nav a {
     }
 }
 
+/* Pour le premier menu */
+/* Responsive Design pour petits écrans */
+@media screen and (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .top-bar .service {
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .top-bar .top-links {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+}
+
+/* Responsive Design pour très petits écrans */
+@media screen and (max-width: 480px) {
+    .top-bar {
+        padding: 10px;
+    }
+
+    .top-bar .brand {
+        font-size: 16px;
+    }
+
+    .top-bar .service {
+        font-size: 12px;
+    }
+
+    .top-bar .top-links a {
+        font-size: 12px;
+    }
+}
 /* Responsive pour petits écrans */
 @media (max-width: 768px) {
     .footer {
@@ -785,6 +872,44 @@ nav a {
 
 .images img:hover {
     transform: scale(1.05);
+}
+
+/* Media Queries pour rendre la section responsive */
+
+/* Lorsque l'écran est inférieur à 768px (tablettes et smartphones en mode paysage) */
+@media (max-width: 768px) {
+    .health-insurance-benefits {
+        flex-direction: column; /* Disposition verticale */
+        align-items: center; /* Centrer les éléments horizontalement */
+    }
+    .images {
+        width: 200px; /* Réduire la largeur des images */
+        height: 250px; /* Ajuster la hauteur */
+    }
+}
+
+/* Lorsque l'écran est inférieur à 480px (smartphones en mode portrait) */
+@media (max-width: 480px) {
+    .health-insurance-benefits {
+        padding: 10px; /* Réduire le padding pour économiser de l'espace */
+        gap: 20px; /* Réduire l'espace entre les colonnes */
+    }
+
+    .images {
+        width: 180px; /* Réduire encore la largeur des images */
+        height: 220px; /* Réduire la hauteur */
+    }
+
+    .images img {
+        width: 150px; /* Adapter la taille des images */
+        height: 100px; /* Ajuster la hauteur des images */
+    }
+
+    .images .image1, .images .image2, .images .image3, .images .image4, .images .image5 {
+        top: 0;
+        left: 0;
+        border: 2px solid #000; /* Réduire les bordures */
+    }
 }
 
 /* Contenu texte aligné à droite */
