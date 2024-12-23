@@ -28,7 +28,7 @@
         <!-- Menu principal -->
         <nav>
             <div class="logo">
-                <a href="">
+                <a href="index.html">
                     <img src="assets/img/Logo_arsa.png" alt="ARSA Logo">
                 </a>
             </div>
@@ -107,35 +107,55 @@
 </section>
 
 <section class="services">
-    <h2>Nous avons les meilleures solutions d'assurances adaptées a vos besoins</h2>
-    <div class="service-grid">
+    <h2>Nous avons les meilleures solutions d'assurances adaptées à vos besoins</h2>
+    <div class="service-container">
+      <button class="scroll-btn left-btn">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <div class="service-grid">
         <div class="service-item">
-            <i class="fas fa-user-md"></i>
-            <h3>Assurance Santé</h3>
-            <p>Une couverture complète pour vos besoins médicaux.</p>
+          <i class="fas fa-user-md"></i>
+          <h3>Assurance Santé</h3>
+          <p>Une couverture complète pour vos besoins médicaux.</p>
+        </div>
+  
+        <div class="service-item">
+          <i class="fas fa-shield-alt"></i>
+          <h3>Assurance Vie</h3>
+          <p>Protégez vos proches grâce à nos plans adaptés.</p>
+        </div>
+  
+        <div class="service-item">
+          <i class="fas fa-plane"></i>
+          <h3>Assurance Voyage</h3>
+          <p>Protégez-vous pendant vos déplacements à travers le monde.</p>
+        </div>
+  
+        <div class="service-item">
+          <i class="fas fa-gavel"></i>
+          <h3>Assurance à responsabilité civile</h3>
+          <p>Couvrez les dommages que vous pourriez causer à autrui.</p>
         </div>
 
-      <div class="service-item">
-        <i class="fas fa-shield-alt"></i>
-        <h3>Assurance Vie</h3>
-        <p>Protégez vos proches grâce à nos plans adaptés.</p>
-      </div>
-      
-      <div class="service-item">
-        <i class="fas fa-plane"></i>
-        <h3>Assurance Voyage</h3>
-        <p>Protégez-vous pendant vos déplacements à travers le monde.</p>
-      </div>
+        <div class="service-item"> 
+            <i class="fas fa-shield-alt"></i>
+            <h3>Assurance automobile</h3>
+            <p>Protégez votre véhicule contre les accidents, le vol et les dommages.</p>
+          </div>
+          
+          <div class="service-item">
+            <i class="fas fa-home"></i>
+            <h3>Assurance habitation</h3>
+            <p>Assurez votre domicile contre les risques de sinistres comme l'incendie, le vol ou les dégâts des eaux.</p>
+          </div>
 
-      <div class="service-item">
-        <i class="fas fa-gavel"></i> <!-- Changement d'icône -->
-        <h3>Assurance à responsabilité civile</h3>
-        <p>Couvrez les dommages que vous pourriez causer à autrui.</p> <!-- Nouvelle phrase -->
-    </div>
-    
-    
+      </div>
+      <button class="scroll-btn right-btn">
+        <i class="fas fa-chevron-right"></i>
+      </button>
     </div>
   </section>
+  
 
   <section class="insurance-advertisement">
     <div class="advertisement-content">
@@ -215,13 +235,13 @@
 </section>
 
 <section class="health-insurance-benefits">
-    <div class="images">
+    <!-- <div class="images">
         <img src="assets/img/AssuranceSante1.jpg" alt="Image 1" class="image image1">
         <img src="assets/img/AssuranceLavize1.jpg" alt="Image 2" class="image image2">
         <img src="assets/img/AssuranceObseque1.jpg" alt="Image 3" class="image image3">
         <img src="assets/img/AssuranceResponsabiliteCivile1.jpg" alt="Image 4" class="image image4">
         <img src="assets/img/AssuranceVoyage2.jpg" alt="Image 5" class="image image5">
-    </div>
+    </div> -->
     <div class="text-content">
         <h2>Les avantages d'une assurance santé</h2>
         <ul>
@@ -385,7 +405,30 @@
 </script>
 
     <script src="assets/js/scripts.js"></script>
-    <!-- Google tag (gtag.js) -->
+    <script>
+        // Récupère les boutons de défilement et la grille de services
+const leftBtn = document.querySelector('.left-btn');
+const rightBtn = document.querySelector('.right-btn');
+const serviceGrid = document.querySelector('.service-grid');
+
+// Fonction pour défiler vers la gauche
+leftBtn.addEventListener('click', () => {
+  serviceGrid.scrollBy({
+    left: -250, // Défile vers la gauche
+    behavior: 'smooth', // Transition fluide
+  });
+});
+
+// Fonction pour défiler vers la droite
+rightBtn.addEventListener('click', () => {
+  serviceGrid.scrollBy({
+    left: 250, // Défile vers la droite
+    behavior: 'smooth', // Transition fluide
+  });
+});
+
+    </script>
+     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-M2FKV4EL2J"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
