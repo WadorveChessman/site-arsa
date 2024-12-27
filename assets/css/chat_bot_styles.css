@@ -111,12 +111,12 @@ body {
 /* Responsive design */
 @media (max-width: 400px) {
     .chat-container {
-        width: 80%;
-        height: 60%;
+        width: 75%;
+        height: 55%;
         bottom: 0;
         right: 0;
         border-radius: 0;
-        margin-bottom: 17%;
+        margin-bottom: 20%;
     }
 
     .chat-header h3 {
