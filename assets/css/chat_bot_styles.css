@@ -109,34 +109,6 @@ body {
 }
 
 /* Responsive design */
-@media (max-width: 400px) {
-   .chat-container {
-        width: 60%;  /* Réduire la largeur du chatbot */
-        height: 35%; /* Réduire la hauteur du chatbot */
-        bottom: 5%;  /* Positionner légèrement plus haut */
-        right: 5%;   /* Positionner légèrement plus à gauche */
-        border-radius: 10px;  /* Ajouter une bordure légèrement arrondie */
-        margin-bottom: 20%; /* Réduire l'espace en bas */
-    }
-
-    .chat-header h3 {
-        font-size: 12px;  /* Réduire la taille du texte du titre */
-        padding: 5px;     /* Réduire le padding autour du titre */
-    }
-
-    .chat-message {
-        font-size: 12px;  /* Réduire la taille de la police des messages */
-    }
-
-    .chat-input input {
-        font-size: 12px;  /* Réduire la taille de la police de l'input */
-        padding: 8px;     /* Réduire l'espace autour de l'input */
-    }
-
-    .chat-container .chat-messages {
-        padding: 10px;  /* Réduire l'espace de padding dans la zone des messages */
-    }
-}
 @media screen and (max-width: 768px) {
     .chat-container {
         width: 60%;  /* Réduire la largeur du chatbot */
