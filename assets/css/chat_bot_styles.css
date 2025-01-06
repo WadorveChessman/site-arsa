@@ -109,9 +109,10 @@ body {
 }
 
 /* Responsive design */
+/* Responsive design */
 @media screen and (max-width: 768px) {
     .chat-container {
-        width: 60%;  /* Réduire la largeur du chatbot */
+        width: 65%;  /* Réduire la largeur du chatbot */
         height: 35%; /* Réduire la hauteur du chatbot */
         bottom: 5%;  /* Positionner légèrement plus haut */
         right: 5%;   /* Positionner légèrement plus à gauche */
@@ -136,5 +137,12 @@ body {
     .chat-container .chat-messages {
         padding: 10px;  /* Réduire l'espace de padding dans la zone des messages */
     }
+    .chat-input button {
+        background-color: #0441f4;
+        color: white;
+        border: none;
+        padding: 4px 3px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
 }
-
