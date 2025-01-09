@@ -216,28 +216,6 @@
     </div>
 </footer>
 
-<!-- Script pour le contact par email -->
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script>
-    (function () {
-        emailjs.init("BVjcuQn19f3ziZhqf");
-    })();
-
-    document.getElementById("contactForm").addEventListener("submit", function (e) {
-        e.preventDefault();
-        const name = document.getElementById("name").value;
-        const email = document.getElementById("email").value;
-        const message = document.getElementById("message").value;
-
-        emailjs.send("service_vx0vhxy", "template_m277olt", { name, email, message })
-            .then(response => {
-                document.getElementById("formResponse").textContent = "Message envoyé avec succès !";
-            })
-            .catch(error => {
-                document.getElementById("formResponse").textContent = "Une erreur est survenue, veuillez réessayer.";
-            });
-    });
-</script>
 <!-- ---- -->
 <script>
     document.querySelectorAll('.toggle-content h3').forEach((toggle) => {
