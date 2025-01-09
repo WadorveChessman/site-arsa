@@ -10,7 +10,18 @@
     <link href="assets/img/arsa_logo.jpg" rel="icon">
     <!-- Font Awesome pour les icônes -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "BVjcuQn19f3ziZhqf",
+        });
+    })();
+    </script>
 </head>
 <body>
     <!-- En-tête du site -->
@@ -268,7 +279,7 @@
         </ul>
     </div>
 </section>
-
+    
 <!-- Section Newsletter -->
 <section class="newsletter-section">
     <div class="newsletter-content">
@@ -277,12 +288,32 @@
             <p>Inscrivez-vous à notre newsletter pour recevoir des conseils, des offres et des informations importantes sur nos produits d'assurance.</p>
         </div>
         <form id="newsletterForm" class="newsletter-form">
-            <input type="email" id="emailInput" placeholder="Entrez votre adresse email" required>
-            <button type="submit"><i class="fas fa-paper-plane"></i> S'abonner</button>
+            <input type="email" id="email" name="email" placeholder="Entrez votre adresse email" required>
+            <button type="submit" ><i class="fas fa-paper-plane"></i> S'abonner</button>
         </form>
         <div id="responseMessage"></div>
     </div>
 </section>
+
+<script>
+   
+    // Gérer l'envoi du formulaire
+    document.getElementById("newsletterForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+        const email = document.getElementById("email").value;
+
+        emailjs.send("service_a9urrbq", "template_g035g9f", { email })
+            .then(() => {
+                document.getElementById("responseMessage").textContent = "Merci pour votre abonnement !";
+            })
+            .catch(() => {
+                document.getElementById("responseMessage").textContent = "Une erreur est survenue, veuillez réessayer.";
+            });
+    });
+</script>
+
+
+    
     <!-- Chatbot container -->
 <div class="chat-container">
     <div class="chat-header">
@@ -299,29 +330,6 @@
         <button id="send-btn">Envoyer</button>
     </div>
 </div>
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-
-<script>
-    // Initialiser EmailJS
-    (function () {
-        emailjs.init("BVjcuQn19f3ziZhqf");
-    })();
-
-    // Gérer l'envoi du formulaire
-    document.getElementById("newsletterForm").addEventListener("submit", function (e) {
-        e.preventDefault();
-        const email = document.getElementById("emailInput").value;
-
-        emailjs.send("service_vx0vhxy", "template_m277olt", { email })
-            .then(() => {
-                document.getElementById("responseMessage").textContent = "Merci pour votre abonnement !";
-            })
-            .catch(() => {
-                document.getElementById("responseMessage").textContent = "Une erreur est survenue, veuillez réessayer.";
-            });
-    });
-</script>
-
 
 
 <!-- Footer Moderne -->
